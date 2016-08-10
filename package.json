@@ -1,0 +1,15 @@
+{
+  "name": "new-audio-tours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "transform-old-tour-to-stops-per-file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "markdown-to-json-with-content": "0.0.3",
+    "ramda": "0.22.1"
+  }
+}
