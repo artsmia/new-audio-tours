@@ -53,8 +53,8 @@ tour.stops.forEach(function(mainStop) {
 layout: episode
 permalink: /stops/${file}
 type: stop
-section_title: ${stop.parentStop ? stop.parentStop.name : stop.name}
-title: ${stop.name}
+section_title: '${(stop.parentStop ? stop.parentStop.name : stop.name).replace(/'/g, "''")}'
+title: '${stop.name.replace(/'/g, "''")}'
 stop_id: ${file}
 audio_file: ${stop.file}.mp3
 ---\n\n`
