@@ -62,3 +62,10 @@ audio_file: ${stop.file}.mp3
     fs.writeFileSync(`${tourName}/${file}.md`, content)
   })
 })
+
+// write an index file
+fs.writeFileSync(`${tourName}/index.md`, `---
+title: ${tour.title}
+mp3_location: ${tour.mp3_location}
+paid: ${tour.paid}
+---${tour.content}`)
