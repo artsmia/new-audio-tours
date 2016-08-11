@@ -8,7 +8,7 @@ var R = require('ramda')
 var m2j = require('markdown-to-json-with-content')
 
 // What tour name are we processing?
-var tourName = 'delacroix'
+var tourName = process.argv[2] || 'delacroix'
 // Where is the old markdown file?
 var tourPath = path.join(__dirname, '../old-tour-files', tourName+".md")
 // Where is the transcript file, converted to markdown?
@@ -26,7 +26,7 @@ var tour = Object.keys(json).map(function(key) {
 
 // Break the transcript up by stop number, accenting the person speaking with `##`
 //     ('Patrick Noon:' -> '## Patrick Noon\n\n')
-var matchName = /^(([\w+|\s]+){2,4}):(.*)$/gm
+var matchName = /^(([\w+|\s|-]+){2,4}):(.*)$/gm
 var transcriptWithSpeakers = R.splitEvery(2, transcript.split('**').splice(1))
 .reduce(function(dict, [stop, transcript]) {
   dict[stop] = transcript.replace(matchName, function(match, person, _, words, offset, string) {
@@ -38,7 +38,7 @@ var transcriptWithSpeakers = R.splitEvery(2, transcript.split('**').splice(1))
 // Create and write a markdown file for each stop with metadata front-matter
 // and the transcript
 tour.stops.forEach(function(mainStop) {
-  var colors = Object.keys(mainStop.colors)
+  var colors = Object.keys(mainStop.colors || {})
   .map(function(key) {
     var colorStop = mainStop.colors[key]
     colorStop.parentStop = mainStop
@@ -58,8 +58,12 @@ title: ${stop.name}
 stop_id: ${file}
 audio_file: ${stop.file}.mp3
 ---\n\n`
-    var content = frontMatter + transcriptWithSpeakers[stop.id || file]
-    fs.writeFileSync(`${tourName}/${file}.md`, content)
+    // find transcript by stop number or stop name
+    var content = R.find(
+      R.is(String),
+      R.props([stop.id || file, stop.name], transcriptWithSpeakers)
+    )
+    fs.writeFileSync(`${tourName}/${file}.md`, frontMatter + content)
   })
 })
 

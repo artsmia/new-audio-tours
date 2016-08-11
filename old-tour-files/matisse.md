@@ -8,7 +8,7 @@ stops:
   -
     id: 1
     file: '001'
-    name: Narrarator's Introduction and Welcome
+    name: Narrator's Introduction and Welcome
     more:
     speaker: Eric Bruce and Kaywin Feldman
 
@@ -155,7 +155,7 @@ stops:
   -
     id: 9
     file: '009'
-    name: “Large Reclining Nude” sculpture
+    name: '"Large Reclining Nude" sculpture'
     accession: BMA, 1950.436
     speaker: Jay Fisher
     colors:
@@ -175,7 +175,7 @@ stops:
   -
     id: 10
     file: '010'
-    name: “Interior, Still Life with Parakeets”
+    name: '"Interior, Still Life with Parakeets"'
     accession: BMA, 1950.252
     speaker: Erika Holmquist-Wall
     colors:
@@ -195,7 +195,7 @@ stops:
   -
     id: 11
     file: '011'
-    name: “The Yellow Dress”
+    name: '"The Yellow Dress"'
     accession: BMA, 1950.256
     speaker: Kathryn Rothkopf
     colors:
@@ -215,7 +215,7 @@ stops:
   -
     id: 12
     file: '012'
-    name: “Large Reclining Nude” painting
+    name: '"Large Reclining Nude" painting'
     accession: BMA, 1950.258
     speaker: Kathryn Rothkopf
     colors:
@@ -235,7 +235,7 @@ stops:
   -
     id: 13
     file: '013'
-    name: “Purple Robe and Anemones”
+    name: '"Purple Robe and Anemones"'
     accession: BMA, 1950.261
     speaker: Erika Holmquist-Wall
     colors:
@@ -255,7 +255,7 @@ stops:
   -
     id: 14
     file: '014'
-    name: “Jazz”
+    name: '"Jazz"'
     accession: MIA, B.82.1
     speaker: Jay Fisher
     colors:
@@ -275,7 +275,7 @@ stops:
   -
     id: 15
     file: '015'
-    name: “In the end, there is only Matisse”
+    name: '"In the end, there is only Matisse"'
     accession: n/a
     speaker: Matisse (Dominique Serrand)
     colors:
