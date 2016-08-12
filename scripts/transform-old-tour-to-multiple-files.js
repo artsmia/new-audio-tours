@@ -6,6 +6,7 @@ var fs = require('fs')
 var path = require('path')
 var R = require('ramda')
 var m2j = require('markdown-to-json-with-content')
+var remark = require('remark')
 
 // What tour name are we processing?
 var tourName = process.argv[2] || 'delacroix'
@@ -63,7 +64,10 @@ audio_file: ${stop.file}.mp3
       R.is(String),
       R.props([stop.id || file, stop.name], transcriptWithSpeakers)
     )
-    fs.writeFileSync(`${tourName}/${file}.md`, frontMatter + content)
+    fs.writeFileSync(
+      `${tourName}/${file}.md`,
+      remark().process(frontMatter + content).contents
+    )
   })
 })
 
