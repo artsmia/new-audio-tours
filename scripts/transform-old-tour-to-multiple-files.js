@@ -7,6 +7,7 @@ var path = require('path')
 var R = require('ramda')
 var m2j = require('markdown-to-json-with-content')
 var remark = require('remark')
+var YAML = require('yamljs')
 
 // What tour name are we processing?
 var tourName = process.argv[2] || 'delacroix'
@@ -41,7 +42,7 @@ var transcriptWithSpeakers = R.splitEvery(2, transcript.split('**').splice(1))
 tour.stops.forEach(function(mainStop) {
   var colors = Object.keys(mainStop.colors || {})
   .map(function(key) {
-    var colorStop = mainStop.colors[key]
+    var colorStop = R.clone(mainStop.colors[key])
     colorStop.parentStop = mainStop
     colorStop.color = key
     return colorStop
@@ -57,8 +58,9 @@ type: stop
 section_title: '${(stop.parentStop ? stop.parentStop.name : stop.name).replace(/'/g, "''")}'
 title: '${stop.name.replace(/'/g, "''")}'
 stop_id: ${file}
-audio_file: ${stop.file}.mp3
----\n\n`
+audio_file: ${stop.file}.mp3`
+    if(!stop.parentStop) frontMatter += "\n" + YAML.stringify({colors: mainStop.colors}, 4, 2)
+    frontMatter += `\n---\n\n`
     // find transcript by stop number or stop name
     var content = R.find(
       R.is(String),

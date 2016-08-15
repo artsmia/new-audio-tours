@@ -11,6 +11,7 @@
   "dependencies": {
     "markdown-to-json-with-content": "0.0.3",
     "ramda": "0.22.1",
-    "remark": "5.1.0"
+    "remark": "5.1.0",
+    "yamljs": "0.2.8"
   }
 }
