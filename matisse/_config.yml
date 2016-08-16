@@ -1,0 +1,4 @@
+# overwrite config variables when building jekyll site
+title: Matisse Audio Tour
+baseurl: "/matisse"
+

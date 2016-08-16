@@ -1,0 +1,3 @@
+# overwrite config variables when building jekyll site
+title: Delacroix Audio Tour
+baseurl: "/delacroix"
