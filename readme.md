@@ -1,5 +1,12 @@
+# Audio tours from Mia.
+
+Markdown format inspired by [ACMI's static audio guide](https://github.com/ACMILabs/static-museum-audio-guide).
+
+Slight modifications made to allow for multiple audio tours to be built
+using the same [jekyll machinery](https://github.com/artsmia/static-museum-audio-guide).
+
+[Replaces an older jekyll-powered audio guide](https://github.com/artsmia/turnip).
+
 TODO
 
-- [ ] write this readme
-- [ ] order stops numerically ('1 2 3' vs '1 10 11 12 … 2 20 21 …')
-- [ ] handle @artsmia's need for 'red, green, yellow' sub-stops
+- [ ] indexes: show <tour>/index.md at /<tour> and link all tours from _site/index.html
