@@ -1,0 +1,346 @@
+[
+  {
+    "Stop #": "0",
+    "CONTENT": "Eric intro",
+    "WHO": "Eric Bruce",
+    "": "",
+    "length": "1:45",
+    "Music": "none"
+  },
+  {
+    "Stop #": "1",
+    "CONTENT": "intro",
+    "WHO": "Kawyin Feldman",
+    "": "",
+    "length": "1:28",
+    "Music": "NM229_02"
+  },
+  {
+    "Stop #": "2",
+    "CONTENT": "why exhibition and archeology",
+    "WHO": "Dr. Meller & Louis Nebelsick",
+    "": "",
+    "length": "3:02",
+    "Music": "NM229.02"
+  },
+  {
+    "Stop #": "3",
+    "CONTENT": "Martin Luther's childhood",
+    "WHO": "Tomoko Emmerling",
+    "": "",
+    "length": "2:56",
+    "Music": "NM229_02"
+  },
+  {
+    "Stop #": "3A",
+    "CONTENT": "Additional archeaolgical finds from Luther's childhood home.",
+    "WHO": "Tomoko Emmerling",
+    "": "",
+    "length": "1:57",
+    "Music": "NM210_18"
+  },
+  {
+    "Stop #": "4",
+    "CONTENT": "Frederick the wise &Jjohn the steadfast portraits",
+    "WHO": "Tom Rassieur",
+    "": "",
+    "length": "4:25",
+    "Music": "BPMC1008_3"
+  },
+  {
+    "Stop #": "4A",
+    "CONTENT": "Lucas Crannach history",
+    "WHO": "Armin Kuntz",
+    "": "",
+    "length": "3:02",
+    "Music": "none"
+  },
+  {
+    "Stop #": "5",
+    "CONTENT": "Maxmillian Pilgrimage Garment",
+    "WHO": "Louis Neblesick",
+    "": "",
+    "length": "1:38",
+    "Music": "BPMC1008_03"
+  },
+  {
+    "Stop #": "6",
+    "CONTENT": "Art as devotion",
+    "WHO": "Johan Van Parys",
+    "": "",
+    "length": "2:48",
+    "Music": "evo091_10"
+  },
+  {
+    "Stop #": "7",
+    "CONTENT": "Blue Chasuble/crest of Albert of Brandenburg",
+    "WHO": "Johan Van Parys",
+    "": "",
+    "length": "3:26",
+    "Music": "BPMC1009_15"
+  },
+  {
+    "Stop #": "8",
+    "CONTENT": "Arm reliquary of the Apostle James the Elder",
+    "WHO": "Johan Van Parys",
+    "": "",
+    "length": "3:40",
+    "Music": "none"
+  },
+  {
+    "Stop #": "8A",
+    "CONTENT": "Relationship to Saints",
+    "WHO": "Johan Van Parys",
+    "": "",
+    "length": "1:59",
+    "Music": "NM228_09"
+  },
+  {
+    "Stop #": "8B",
+    "CONTENT": "Archangel panel",
+    "WHO": "Johan Van Parys",
+    "": "",
+    "length": "1:55",
+    "Music": "CCLCHAPC08_13"
+  },
+  {
+    "Stop #": "9",
+    "CONTENT": "Timeline",
+    "WHO": "Tom Rassieur",
+    "": "evo091_10",
+    "length": "5:44",
+    "Music": "CHAP292_14"
+  },
+  {
+    "Stop #": "10",
+    "CONTENT": "Indulgence Chest",
+    "WHO": "Tom Rassieur",
+    "": "",
+    "length": "5:17",
+    "Music": "CCLCHAP29_3.00"
+  },
+  {
+    "Stop #": "10A",
+    "CONTENT": "Indulgences explained-Catholic perspective",
+    "WHO": "Johan Van Parys",
+    "": "",
+    "length": "0:55",
+    "Music": "none"
+  },
+  {
+    "Stop #": "10B",
+    "CONTENT": "Indulgences explained-Lutheran perspective",
+    "WHO": "Mary Jane Heamig",
+    "": "",
+    "length": "1:09",
+    "Music": "none"
+  },
+  {
+    "Stop #": "11",
+    "CONTENT": "Luther as Augustinian monk 2 portraits",
+    "WHO": "Joanna Lindell",
+    "": "",
+    "length": "2:07",
+    "Music": "none"
+  },
+  {
+    "Stop #": "11A",
+    "CONTENT": "Luther with Dove",
+    "WHO": "Joanna Lindell",
+    "": "",
+    "length": "3:52",
+    "Music": "BPMC1007_04"
+  },
+  {
+    "Stop #": "11B",
+    "CONTENT": "Printing Press",
+    "WHO": "Mary Jane Heamig",
+    "": "",
+    "length": "1:42",
+    "Music": "none"
+  },
+  {
+    "Stop #": "12",
+    "CONTENT": "95 theses",
+    "WHO": "Mary Jane Hemming",
+    "": "",
+    "length": "3:55",
+    "Music": "none"
+  },
+  {
+    "Stop #": "12A",
+    "CONTENT": "95 theses more",
+    "WHO": "Mary Jane Hemming",
+    "": "",
+    "length": "1:12",
+    "Music": "none"
+  },
+  {
+    "Stop #": "13",
+    "CONTENT": " Pulpit of Luther's Last Sermon",
+    "WHO": "Tomoko Emmerling",
+    "": "",
+    "length": "2:24",
+    "Music": "NM210_18"
+  },
+  {
+    "Stop #": "14",
+    "CONTENT": "Law and Grace",
+    "WHO": "Louis Nebelsick",
+    "": "",
+    "length": "4:03",
+    "Music": "BPMC1007_17"
+  },
+  {
+    "Stop #": "15",
+    "CONTENT": "Gotha Altar",
+    "WHO": "Tomoko Emmerling",
+    "": "",
+    "length": "1:51",
+    "Music": "BPMC1009_12"
+  },
+  {
+    "Stop #": "16",
+    "CONTENT": "Junker Jörg-the story",
+    "WHO": "Joanna Lindell",
+    "": "",
+    "length": "3:31",
+    "Music": "BPMS3022_06"
+  },
+  {
+    "Stop #": "16A",
+    "CONTENT": "Luther translates the Bible",
+    "WHO": "Louis Nebelsick",
+    "": "",
+    "length": "3:39",
+    "Music": "BPMC1009_12"
+  },
+  {
+    "Stop #": "16B",
+    "CONTENT": "Luther translates the Bible more",
+    "WHO": "Armin Kuntz",
+    "": "",
+    "length": "2:22",
+    "Music": "CHAP292_38"
+  },
+  {
+    "Stop #": "16C",
+    "CONTENT": "iconoclasm",
+    "WHO": "Joanna Lindell",
+    "": "",
+    "length": "1:21",
+    "Music": "none"
+  },
+  {
+    "Stop #": "17",
+    "CONTENT": "Portrait of Katarina Von Bora",
+    "WHO": "Louis Neblesick",
+    "": "",
+    "length": "2:41",
+    "Music": "NM213_06"
+  },
+  {
+    "Stop #": "17A",
+    "CONTENT": "More on Katarina Vo Bora",
+    "WHO": "Louis Neblesick",
+    "": "",
+    "length": "1:46",
+    "Music": "NM228_09"
+  },
+  {
+    "Stop #": "17B",
+    "CONTENT": "Revolutionary Portraits of Katarina Von Bora and Martin Luther",
+    "WHO": "Armin Kuntz",
+    "": "",
+    "length": "1:13",
+    "Music": "none"
+  },
+  {
+    "Stop #": "18",
+    "CONTENT": "Luther's study",
+    "WHO": "Tomoko Emmerling",
+    "": "",
+    "length": "1:44",
+    "Music": "NM213_06"
+  },
+  {
+    "Stop #": "19",
+    "CONTENT": " Philip Melanchthon Portrait by Albrecht Durer",
+    "WHO": "Joanna Lindell",
+    "": "",
+    "length": "2:31",
+    "Music": "BPMC1008_01"
+  },
+  {
+    "Stop #": "19A",
+    "CONTENT": "more about Melanchton and Humanism",
+    "WHO": "Joanna Lindell",
+    "": "",
+    "length": "1:30",
+    "Music": "BPMS3011_11"
+  },
+  {
+    "Stop #": "20",
+    "CONTENT": "Christ and Anti christ",
+    "WHO": "Joann Lindell",
+    "": "",
+    "length": "2:47",
+    "Music": "none"
+  },
+  {
+    "Stop #": "20A",
+    "CONTENT": "A Broadsheet Decrying the Sale of Indulgences",
+    "WHO": "Christiane Andersson",
+    "": "",
+    "length": "2:56",
+    "Music": "NM229_02"
+  },
+  {
+    "Stop #": "20B",
+    "CONTENT": "The 7 heads of Martin Luther",
+    "WHO": "Christiane Andersson",
+    "": "",
+    "length": "3:33",
+    "Music": "none"
+  },
+  {
+    "Stop #": "20C",
+    "CONTENT": "The Devil's Bagpipe",
+    "WHO": "Christiane Andersson",
+    "": "",
+    "length": "3:03",
+    "Music": "DWCD01282100"
+  },
+  {
+    "Stop #": "21",
+    "CONTENT": "Luther and the Jewish and Muslim Faiths",
+    "WHO": "Tom  Rassieur",
+    "": "",
+    "length": "2:09",
+    "Music": "none"
+  },
+  {
+    "Stop #": "21A",
+    "CONTENT": "on Jews and their Lies",
+    "WHO": "Rabbi Norman Cohen",
+    "": "",
+    "length": "5:30",
+    "Music": "DWLP34440500"
+  },
+  {
+    "Stop #": "21B",
+    "CONTENT": "Our'an-Luther and Islam",
+    "WHO": "Hanadi Shehabeddine",
+    "": "",
+    "length": "4:02",
+    "Music": "KOK2156_08"
+  },
+  {
+    "Stop #": "22",
+    "CONTENT": "debate lecturn",
+    "WHO": "Tom Rassieur",
+    "": "",
+    "length": "5:25",
+    "Music": "CHAP21_15.00"
+  }
+]
