@@ -6,8 +6,13 @@ stops.json: stops.csv
 
 md:
 	jq -c '.[] | select(."Stop #" != "")' stops.json | while read json; do \
-		file=$$(jq -r '."Stop #"' <<<$$json); \
-		stopJson=$$(jq '{ \
+		stop=$$(jq -r '."Stop #"' <<<$$json); \
+		parentStop=$$(echo $$stop | sed 's/[ABC]//'); \
+		substops=$$(jq -r 'map(."Stop #")[]' stops.json \
+		| grep "^$$parentStop[ABC]" \
+		| tr '\n' ',' \
+		| sed 's/,$$//'); \
+		stopJson=$$(jq --arg substops "$$substops" --arg parent $$parentStop '{ \
 			layout: "episode", \
 	    type: "stop", \
 	  	section_title: .CONTENT, \
@@ -15,9 +20,11 @@ md:
 			stop_id: ."Stop #", \
 			permalink: ("/stops/" + ."Stop #"), \
 			audio_file: (."Stop #" + ".mp3"), \
+			parent_stop: $$parent, \
+			substops: ($$substops | split(",")), \
 		}' <<<$$json); \
 		echo $$stopJson | json2yaml \
     | gsed 's/audio_file: \([1-9]\)/audio_file: 0\1/' \
-    > $$file.md; \
-		echo '---\n' >> $$file.md; \
+    > $$stop.md; \
+		echo '---\n' >> $$stop.md; \
 	done;
