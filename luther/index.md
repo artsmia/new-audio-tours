@@ -1,6 +1,6 @@
 ---
-title: Martin Luther: Art and the Reformation
-mp3_location: //audio-tours.s3.amazonaws.com/luther/
+title: "Martin Luther: Art and the Reformation"
+mp3_location: "//audio-tours.s3.amazonaws.com/luther/"
 paid: true
 ---
 
