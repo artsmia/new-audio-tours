@@ -22,4 +22,17 @@ buildTour:
 	rsync -avz $(template)/_site/ _site/$(tour)
 
 deploy:
-	rsync -avz _site/ staging:/var/www/audio/
+	rsync -avz _site/ new:/var/www/audio-tours/
+
+id3tags:
+	ls luther/*.md | grep -v 'index\|preview' | while read file; do \
+		json=$$(m2j $$file | jq 'to_entries[0].value'); \
+		title=$$(jq '.section_title' <<<$$json); \
+		speakers=$$(cat $$file | grep '^##' | sed 's/## //' | sort | uniq | tr '\n' ';' | sed 's/;$$//; s/;/, /'); \
+		mp3File=$$(echo mp3s/luther-tagged/$$(basename $$file .md).mp3 | gsed -r 's|/(.[ABC]?)\.mp3|/0\1.mp3|'); \
+		id3tool \
+		  -t "$$title" \
+			-r "$$speakers" \
+			-a "Martin Luther Audio Guide | Minneapolis Institute of Art" \
+			$$mp3File; \
+	done
